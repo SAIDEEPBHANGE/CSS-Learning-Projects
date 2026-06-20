@@ -16,7 +16,7 @@ This repository contains small CSS projects I'm building while learning frontend
 
 ### 1. Personal Profile Card
 
-**Status:** 🟨 In Progress
+**Status:** ✅ Completed
 
 #### Features
 
@@ -34,6 +34,8 @@ This repository contains small CSS projects I'm building while learning frontend
 - Shadows
 - Flexbox
 - Hover States
+
+![Personal Profile Card](/profile-card.png)
 
 ---
 
@@ -126,7 +128,7 @@ This repository contains small CSS projects I'm building while learning frontend
 
 | Project               | Status |
 | --------------------- | ------ |
-| Personal Profile Card | ⬜     |
+| Personal Profile Card | ✅     |
 | Pricing Cards Section | ⬜     |
 | Restaurant Menu Page  | ⬜     |
 | Product Landing Page  | ⬜     |
