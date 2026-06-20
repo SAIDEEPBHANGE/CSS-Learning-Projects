@@ -6,5 +6,120 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <section class="pricing">
+      <div class="pricing__container">
+        <div class="pricing__header">
+          <h2 class="pricing__title">Simple, Transparent Pricing</h2>
+          <p class="pricing__subtitle">Choose the plan that's right for you.</p>
+          <div class="pricing-toggle" id="price-toggle-container">
+            <button
+              class="pricing-toggle__button pricing-toggle__button--active"
+            >
+              Monthly
+            </button>
+            <button class="pricing-toggle__button">Yearly</button>
+          </div>
+        </div>
+        <div class="pricing__grid">
+          <!-- Basic Plan -->
+          <article class="pricing-card">
+            <div class="pricing-card__header">
+              <span class="pricing-card__badge">Starter</span>
+              <h3 class="pricing-card__plan-name">Basic</h3>
+              <p class="pricing-card__plan-description">
+                Best for individuals and freelancers.
+              </p>
+            </div>
+
+            <div class="pricing-card__price">
+              <span class="pricing-card__currency">$</span>
+              <span
+                class="pricing-card__amount"
+                data-monthly="19"
+                data-yearly="209"
+              >
+                19
+              </span>
+              <span class="pricing-card__duration">/month</span>
+            </div>
+
+            <ul class="pricing-card__features">
+              <li class="pricing-card__feature-item">5 Projects</li>
+              <li class="pricing-card__feature-item">10 GB Storage</li>
+              <li class="pricing-card__feature-item">Email Support</li>
+              <li class="pricing-card__feature-item">Basic Analytics</li>
+            </ul>
+
+            <div class="pricing-card__footer">
+              <a href="#" class="pricing-card__cta">Get Started</a>
+            </div>
+          </article>
+
+          <!-- Pro Plan -->
+          <article class="pricing-card pricing-card--featured">
+            <div class="pricing-card__header">
+              <span class="pricing-card__badge">Most Popular</span>
+              <h3 class="pricing-card__plan-name">Pro</h3>
+              <p class="pricing-card__plan-description">
+                Perfect for growing businesses.
+              </p>
+            </div>
+
+            <div class="pricing-card__price">
+              <span class="pricing-card__currency">$</span>
+              <span
+                class="pricing-card__amount"
+                data-monthly="49"
+                data-yearly="539"
+              >
+                49
+              </span>
+              <span class="pricing-card__duration">/month</span>
+            </div>
+
+            <ul class="pricing-card__features">
+              <li class="pricing-card__feature-item">Unlimited Projects</li>
+              <li class="pricing-card__feature-item">100 GB Storage</li>
+              <li class="pricing-card__feature-item">Priority Support</li>
+              <li class="pricing-card__feature-item">Advanced Analytics</li>
+            </ul>
+
+            <div class="pricing-card__footer">
+              <a href="#" class="pricing-card__cta">Start Free Trial</a>
+            </div>
+          </article>
+
+          <!-- Enterprise Plan -->
+          <article class="pricing-card">
+            <div class="pricing-card__header">
+              <span class="pricing-card__badge">Enterprise</span>
+              <h3 class="pricing-card__plan-name">Custom</h3>
+              <p class="pricing-card__plan-description">
+                Tailored solutions for large organizations.
+              </p>
+            </div>
+
+            <div class="pricing-card__price">
+              <span class="pricing-card__amount_custom"> Custom Pricing </span>
+            </div>
+
+            <ul class="pricing-card__features">
+              <li class="pricing-card__feature-item">Unlimited Users</li>
+              <li class="pricing-card__feature-item">
+                Dedicated Infrastructure
+              </li>
+              <li class="pricing-card__feature-item">24/7 Support</li>
+              <li class="pricing-card__feature-item">Custom Integrations</li>
+            </ul>
+
+            <div class="pricing-card__footer">
+              <a href="#" class="pricing-card__cta">Contact Sales</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
 </html>

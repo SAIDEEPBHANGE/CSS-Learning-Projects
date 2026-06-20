@@ -1,0 +1,124 @@
+:root {
+  /* Brand */
+  --color-primary: #6366f1;
+  --color-primary-dark: #4f46e5;
+  --color-primary-light: #818cf8;
+
+  /* Backgrounds */
+  --color-bg: #0f172a;
+  --color-surface: #111827;
+  --color-card: #1e293b;
+  --color-card-hover: #273449;
+
+  /* Text */
+  --color-heading: #ffffff;
+  --color-text: #cbd5e1;
+  --color-text-muted: #94a3b8;
+
+  /* Borders */
+  --color-border: #334155;
+  --color-border-light: #475569;
+
+  /* Accent */
+  --color-success: #22c55e;
+  --color-warning: #f59e0b;
+  --color-danger: #ef4444;
+
+  /* Featured Plan */
+  --color-featured: #8b5cf6;
+  --color-featured-glow: rgba(139, 92, 246, 0.25);
+
+  /* Buttons */
+  --color-btn-text: #ffffff;
+  --color-btn-bg: #6366f1;
+  --color-btn-hover: #4f46e5;
+
+  /* Shadows */
+  --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.25);
+  --shadow-featured: 0 20px 40px rgba(99, 102, 241, 0.25);
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+.pricing {
+  background-color: var(--color-bg);
+  height: 100vh;
+  width: 100vw;
+  padding: 2rem;
+}
+.pricing__title {
+  color: var(--color-heading);
+  text-align: center;
+  font-size: 2.5rem;
+}
+.pricing__subtitle {
+  color: var(--color-text-muted);
+  text-align: center;
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
+}
+/* Toggle */
+.pricing-toggle {
+  justify-self: center;
+  margin: 0.5rem;
+}
+.pricing-toggle__button {
+  background-color: var(--color-btn-text);
+  color: var(--color-btn-bg);
+  padding: 0.4rem 3rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  margin: 0;
+  transition:
+    background-color 0.5s,
+    color 0.5s;
+}
+.pricing-toggle__button:first-child {
+  border-radius: var(--radius-lg) 0 0 var(--radius-lg);
+}
+.pricing-toggle__button:last-child {
+  border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+}
+.pricing-toggle__button:hover {
+  background-color: var(--color-btn-hover);
+  color: var(--color-btn-text);
+}
+.pricing-toggle__button--active {
+  background-color: var(--color-btn-bg);
+  color: var(--color-btn-text);
+}
+/* Grid Pricing */
+.pricing__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem;
+}
+.pricing-card {
+  background-color: var(--color-card);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  padding: 2rem;
+}
+.pricing-card__header {
+  text-align: center;
+  font-size: 1rem;
+  margin: 1rem;
+}
+.pricing-card__badge {
+  font-size: 2rem;
+}
+.pricing-card--featured {
+  background-color: var(--color-featured);
+}
