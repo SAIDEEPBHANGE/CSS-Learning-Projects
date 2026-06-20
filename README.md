@@ -41,7 +41,7 @@ This repository contains small CSS projects I'm building while learning frontend
 
 ### 2. Pricing Cards Section
 
-**Status:** ⬜ Not Started
+**Status:** ✅ Completed
 
 #### Features
 
@@ -57,6 +57,8 @@ This repository contains small CSS projects I'm building while learning frontend
 - Visual Hierarchy
 - CSS Transitions
 - Hover Effects
+
+![Pricing Cards Section](/pricing-cards.png)
 
 ---
 
@@ -129,7 +131,7 @@ This repository contains small CSS projects I'm building while learning frontend
 | Project               | Status |
 | --------------------- | ------ |
 | Personal Profile Card | ✅     |
-| Pricing Cards Section | ⬜     |
+| Pricing Cards Section | ✅     |
 | Restaurant Menu Page  | ⬜     |
 | Product Landing Page  | ⬜     |
 | Dashboard Layout      | ⬜     |
