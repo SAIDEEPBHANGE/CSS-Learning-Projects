@@ -26,6 +26,7 @@
 
   /* Featured Plan */
   --color-featured: #8b5cf6;
+  --color-featured-dark: #7c3aed;
   --color-featured-glow: rgba(139, 92, 246, 0.25);
 
   /* Buttons */
@@ -35,90 +36,258 @@
 
   /* Shadows */
   --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.25);
-  --shadow-featured: 0 20px 40px rgba(99, 102, 241, 0.25);
+  --shadow-featured: 0 20px 40px rgba(139, 92, 246, 0.25);
 
   /* Radius */
   --radius-sm: 8px;
   --radius-md: 16px;
   --radius-lg: 24px;
 }
+
+/* Reset & Base Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
   font-family: "Inter", sans-serif;
-  color: white;
-}
-.pricing {
   background-color: var(--color-bg);
-  height: 100vh;
-  width: 100vw;
-  padding: 2rem;
+  color: var(--color-text);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.pricing {
+  width: 100%;
+  padding: 4rem 2rem;
+}
+
+.pricing__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pricing__header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
 .pricing__title {
   color: var(--color-heading);
-  text-align: center;
-  font-size: 2.5rem;
+  font-size: 2.75rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
 }
+
 .pricing__subtitle {
   color: var(--color-text-muted);
-  text-align: center;
   font-size: 1.25rem;
-  margin-top: 0.5rem;
+  margin-top: 0.75rem;
 }
-/* Toggle */
+
+/* Toggle Switch */
 .pricing-toggle {
-  justify-self: center;
-  margin: 0.5rem;
+  display: inline-flex;
+  background-color: var(--color-surface);
+  padding: 0.35rem;
+  border-radius: var(--radius-lg);
+  margin-top: 2rem;
+  border: 1px solid var(--color-border);
 }
+
 .pricing-toggle__button {
-  background-color: var(--color-btn-text);
-  color: var(--color-btn-bg);
-  padding: 0.4rem 3rem;
-  font-size: 1rem;
-  font-weight: bold;
+  background: transparent;
+  color: var(--color-text-muted);
+  padding: 0.5rem 2rem;
+  font-size: 0.95rem;
+  font-weight: 600;
   cursor: pointer;
   border: none;
-  margin: 0;
-  transition:
-    background-color 0.5s,
-    color 0.5s;
+  border-radius: var(--radius-lg);
+  transition: all 0.3s ease;
 }
-.pricing-toggle__button:first-child {
-  border-radius: var(--radius-lg) 0 0 var(--radius-lg);
-}
-.pricing-toggle__button:last-child {
-  border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
-}
+
 .pricing-toggle__button:hover {
-  background-color: var(--color-btn-hover);
-  color: var(--color-btn-text);
+  color: var(--color-heading);
 }
+
 .pricing-toggle__button--active {
   background-color: var(--color-btn-bg);
   color: var(--color-btn-text);
 }
-/* Grid Pricing */
+
+.pricing-toggle__button--active:hover {
+  background-color: var(--color-btn-hover);
+  color: var(--color-btn-text);
+}
+
+/* Pricing Grid Layout */
 .pricing__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-  padding: 2rem;
+  align-items: stretch;
 }
+
+/* Pricing Cards */
 .pricing-card {
   background-color: var(--color-card);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-card);
-  padding: 2rem;
+  padding: 2.5rem 2rem;
+  border: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
-.pricing-card__header {
-  text-align: center;
-  font-size: 1rem;
-  margin: 1rem;
+
+.pricing-card:hover {
+  transform: translateY(-4px);
+  background-color: var(--color-card-hover);
 }
-.pricing-card__badge {
-  font-size: 2rem;
-}
+
+/* Featured Card Variance */
 .pricing-card--featured {
-  background-color: var(--color-featured);
+  position: relative;
+  background-color: var(--color-surface);
+  border-color: var(--color-featured);
+  box-shadow: var(--shadow-featured);
+}
+
+.pricing-card--featured:hover {
+  background-color: var(--color-surface);
+}
+
+/* Card Header elements */
+.pricing-card__header {
+  margin-bottom: 2rem;
+}
+
+.pricing-card__badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-border);
+  color: var(--color-text);
+  margin-bottom: 1rem;
+}
+
+.pricing-card--featured .pricing-card__badge {
+  background-color: var(--color-featured-glow);
+  color: var(--color-primary-light);
+}
+
+.pricing-card__plan-name {
+  color: var(--color-heading);
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.pricing-card__plan-description {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Price elements */
+.pricing-card__price {
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+  margin-bottom: 2rem;
+}
+
+.pricing-card__currency {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--color-heading);
+}
+
+.pricing-card__amount {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--color-heading);
+  line-height: 1;
+}
+
+.pricing-card__amount--custom {
+  font-size: 2.25rem;
+  line-height: 1.2;
+}
+
+.pricing-card__duration {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+}
+
+/* Features List */
+.pricing-card__features {
+  list-style: none;
+  margin-bottom: 2.5rem;
+  flex-grow: 1;
+}
+
+.pricing-card__feature-item {
+  font-size: 0.95rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text);
+}
+
+.pricing-card__feature-item:last-child {
+  border-bottom: none;
+}
+
+/* Call to Action Buttons */
+.pricing-card__footer {
+  margin-top: auto;
+}
+
+.pricing-card__cta {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--color-border);
+  color: var(--color-heading);
+  padding: 0.85rem 1.5rem;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: 1rem;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+}
+
+.pricing-card__cta:hover {
+  background-color: var(--color-border-light);
+}
+
+.pricing-card__cta--featured {
+  background-color: var(--color-primary);
+  color: var(--color-btn-text);
+}
+
+.pricing-card__cta--featured:hover {
+  background-color: var(--color-primary-dark);
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .pricing {
+    padding: 2rem 1rem;
+  }
+  .pricing__title {
+    font-size: 2rem;
+  }
 }

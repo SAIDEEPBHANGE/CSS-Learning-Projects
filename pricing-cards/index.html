@@ -3,13 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Simple, Transparent Pricing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <section class="pricing">
       <div class="pricing__container">
-        <div class="pricing__header">
+        <header class="pricing__header">
           <h2 class="pricing__title">Simple, Transparent Pricing</h2>
           <p class="pricing__subtitle">Choose the plan that's right for you.</p>
           <div class="pricing-toggle" id="price-toggle-container">
@@ -20,9 +26,9 @@
             </button>
             <button class="pricing-toggle__button">Yearly</button>
           </div>
-        </div>
+        </header>
+
         <div class="pricing__grid">
-          <!-- Basic Plan -->
           <article class="pricing-card">
             <div class="pricing-card__header">
               <span class="pricing-card__badge">Starter</span>
@@ -38,9 +44,8 @@
                 class="pricing-card__amount"
                 data-monthly="19"
                 data-yearly="209"
+                >19</span
               >
-                19
-              </span>
               <span class="pricing-card__duration">/month</span>
             </div>
 
@@ -56,7 +61,6 @@
             </div>
           </article>
 
-          <!-- Pro Plan -->
           <article class="pricing-card pricing-card--featured">
             <div class="pricing-card__header">
               <span class="pricing-card__badge">Most Popular</span>
@@ -72,9 +76,8 @@
                 class="pricing-card__amount"
                 data-monthly="49"
                 data-yearly="539"
+                >49</span
               >
-                49
-              </span>
               <span class="pricing-card__duration">/month</span>
             </div>
 
@@ -86,11 +89,12 @@
             </ul>
 
             <div class="pricing-card__footer">
-              <a href="#" class="pricing-card__cta">Start Free Trial</a>
+              <a href="#" class="pricing-card__cta pricing-card__cta--featured"
+                >Start Free Trial</a
+              >
             </div>
           </article>
 
-          <!-- Enterprise Plan -->
           <article class="pricing-card">
             <div class="pricing-card__header">
               <span class="pricing-card__badge">Enterprise</span>
@@ -101,7 +105,9 @@
             </div>
 
             <div class="pricing-card__price">
-              <span class="pricing-card__amount_custom"> Custom Pricing </span>
+              <span class="pricing-card__amount pricing-card__amount--custom"
+                >Custom Pricing</span
+              >
             </div>
 
             <ul class="pricing-card__features">
