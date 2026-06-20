@@ -157,3 +157,11 @@ This repository is part of my CSS learning journey. Each project is intentionall
 ## Completion Goal
 
 Complete all five projects without copying the final code from tutorials and rely primarily on documentation, experimentation, and problem-solving.
+
+### Project Links
+
+- [Profile Card](./profile-card)
+- [Pricing Cards](./pricing-cards)
+- [Restaurant Menu](./restaurant-menu)
+- [Product Landing Page](./product-landing-page)
+- [Dashboard Layout](./dashboard-layout)
