@@ -16,7 +16,7 @@ This repository contains small CSS projects I'm building while learning frontend
 
 ### 1. Personal Profile Card
 
-**Status:** ⬜ Not Started
+**Status:** 🟨 In Progress
 
 #### Features
 
