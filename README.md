@@ -101,8 +101,7 @@ This repository contains small CSS projects I'm building while learning frontend
 - Typography
 - Flexbox
 - Section Design
-
-![Product Landing Page](/product-landing-page.png)
+  ![Product Landing Page](/product-landing-page.png)
 
 ---
 
@@ -125,6 +124,8 @@ This repository contains small CSS projects I'm building while learning frontend
 - Responsive Design
 - Dashboard UI Patterns
 
+![Dashboard Layout](/dashboard-layout.png)
+
 ---
 
 ## Progress Tracker
@@ -135,7 +136,7 @@ This repository contains small CSS projects I'm building while learning frontend
 | Pricing Cards Section | ✅     |
 | Restaurant Menu Page  | ✅     |
 | Product Landing Page  | ✅     |
-| Dashboard Layout      | ⬜     |
+| Dashboard Layout      | ✅     |
 
 ### Legend
 
@@ -151,11 +152,11 @@ This repository is part of my CSS learning journey. Each project is intentionall
 
 ### Current Focus
 
-- [ ] Flexbox
-- [ ] CSS Grid
-- [ ] Responsive Design
-- [ ] Transitions & Animations
-- [ ] Layout Building
+- [x] Flexbox
+- [x] CSS Grid
+- [x] Responsive Design
+- [x] Transitions & Animations
+- [x] Layout Building
 
 ---
 

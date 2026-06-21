@@ -1,41 +1,31 @@
 :root {
-  /* Brand */
   --color-primary: #6366f1;
   --color-primary-dark: #4f46e5;
   --color-primary-light: #818cf8;
-  /* Backgrounds */
   --color-bg: #0f172a;
   --color-surface: #111827;
   --color-card: #1e293b;
   --color-card-hover: #273449;
-  /* Text */
   --color-heading: #ffffff;
   --color-text: #cbd5e1;
   --color-text-muted: #94a3b8;
-  /* Borders */
   --color-border: #334155;
   --color-border-light: #475569;
-  /* Accent */
   --color-success: #22c55e;
   --color-warning: #f59e0b;
   --color-danger: #ef4444;
-  /* Featured Plan */
   --color-featured: #8b5cf6;
   --color-featured-dark: #7c3aed;
   --color-featured-glow: rgba(139, 92, 246, 0.25);
-  /* Buttons */
   --color-btn-text: #ffffff;
   --color-btn-bg: #6366f1;
   --color-btn-hover: #4f46e5;
-  /* Shadows */
   --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.25);
   --shadow-featured: 0 20px 40px rgba(139, 92, 246, 0.25);
-  /* Radius */
   --radius-sm: 8px;
   --radius-md: 16px;
   --radius-lg: 24px;
 }
-/* Reset & Base Styles */
 * {
   margin: 0;
   padding: 0;
@@ -73,7 +63,6 @@ body {
   font-size: 1.25rem;
   margin-top: 0.75rem;
 }
-/* Toggle Switch */
 .pricing-toggle {
   display: inline-flex;
   background-color: var(--color-surface);
@@ -104,14 +93,12 @@ body {
   background-color: var(--color-btn-hover);
   color: var(--color-btn-text);
 }
-/* Pricing Grid Layout */
 .pricing__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   align-items: stretch;
 }
-/* Pricing Cards */
 .pricing-card {
   background-color: var(--color-card);
   border-radius: var(--radius-lg);
@@ -128,7 +115,6 @@ body {
   transform: translateY(-4px);
   background-color: var(--color-card-hover);
 }
-/* Featured Card Variance */
 .pricing-card--featured {
   position: relative;
   background-color: var(--color-surface);
@@ -138,7 +124,6 @@ body {
 .pricing-card--featured:hover {
   background-color: var(--color-surface);
 }
-/* Card Header elements */
 .pricing-card__header {
   margin-bottom: 2rem;
 }
@@ -169,7 +154,6 @@ body {
   font-size: 0.95rem;
   line-height: 1.5;
 }
-/* Price elements */
 .pricing-card__price {
   display: flex;
   align-items: baseline;
@@ -195,7 +179,6 @@ body {
   font-size: 0.95rem;
   color: var(--color-text-muted);
 }
-/* Features List */
 .pricing-card__features {
   list-style: none;
   margin-bottom: 2.5rem;
@@ -210,7 +193,6 @@ body {
 .pricing-card__feature-item:last-child {
   border-bottom: none;
 }
-/* Call to Action Buttons */
 .pricing-card__footer {
   margin-top: auto;
 }
@@ -238,7 +220,6 @@ body {
 .pricing-card__cta--featured:hover {
   background-color: var(--color-primary-dark);
 }
-/* Responsive adjustments */
 @media (max-width: 640px) {
   .pricing {
     padding: 2rem 1rem;
