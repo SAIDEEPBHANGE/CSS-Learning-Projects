@@ -84,7 +84,7 @@ This repository contains small CSS projects I'm building while learning frontend
 
 ### 4. Product Landing Page
 
-**Status:** ⬜ Not Started
+**Status:** ✅ Completed
 
 #### Features
 
@@ -101,6 +101,8 @@ This repository contains small CSS projects I'm building while learning frontend
 - Typography
 - Flexbox
 - Section Design
+
+![Product Landing Page](/product-landing-page.png)
 
 ---
 
@@ -132,7 +134,7 @@ This repository contains small CSS projects I'm building while learning frontend
 | Personal Profile Card | ✅     |
 | Pricing Cards Section | ✅     |
 | Restaurant Menu Page  | ✅     |
-| Product Landing Page  | ⬜     |
+| Product Landing Page  | ✅     |
 | Dashboard Layout      | ⬜     |
 
 ### Legend
