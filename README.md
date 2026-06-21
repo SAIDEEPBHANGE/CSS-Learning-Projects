@@ -64,7 +64,7 @@ This repository contains small CSS projects I'm building while learning frontend
 
 ### 3. Restaurant Menu Page
 
-**Status:** ⬜ Not Started
+**Status:** ✅ Completed
 
 #### Features
 
@@ -80,6 +80,8 @@ This repository contains small CSS projects I'm building while learning frontend
 - Responsive Design
 - Typography
 - Cards
+
+![Restaurant Menu Page](/restaurant-menu.png)
 
 ---
 
@@ -132,7 +134,7 @@ This repository contains small CSS projects I'm building while learning frontend
 | --------------------- | ------ |
 | Personal Profile Card | ✅     |
 | Pricing Cards Section | ✅     |
-| Restaurant Menu Page  | ⬜     |
+| Restaurant Menu Page  | ✅     |
 | Product Landing Page  | ⬜     |
 | Dashboard Layout      | ⬜     |
 
