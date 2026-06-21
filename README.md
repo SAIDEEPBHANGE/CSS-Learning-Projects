@@ -34,8 +34,7 @@ This repository contains small CSS projects I'm building while learning frontend
 - Shadows
 - Flexbox
 - Hover States
-
-![Personal Profile Card](/profile-card.png)
+  ![Personal Profile Card](/profile-card.png)
 
 ---
 
@@ -57,8 +56,7 @@ This repository contains small CSS projects I'm building while learning frontend
 - Visual Hierarchy
 - CSS Transitions
 - Hover Effects
-
-![Pricing Cards Section](/pricing-cards.png)
+  ![Pricing Cards Section](/pricing-cards.png)
 
 ---
 
@@ -80,8 +78,7 @@ This repository contains small CSS projects I'm building while learning frontend
 - Responsive Design
 - Typography
 - Cards
-
-![Restaurant Menu Page](/restaurant-menu.png)
+  ![Restaurant Menu Page](/restaurant-menu.png)
 
 ---
 
