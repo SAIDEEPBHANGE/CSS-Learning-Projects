@@ -16,95 +16,13 @@ This repository contains small CSS projects I'm building while learning frontend
 
 ### [1 Personal Profile Card](./01-profile-card/README.md)
 
-### 2. Pricing Cards Section
+### [2. Pricing Cards Section](./02-pricing-cards/README.md)
 
-**Status:** ✅ Completed
+### [3. Restaurant Menu Page](./03-restaurant-menu/README.md)
 
-#### Features
+### [4. Product Landing Page](./04-product-landing-page/README.md)
 
-- Basic, Pro, and Premium plans
-- Feature lists
-- Call-to-action buttons
-- Highlighted "Most Popular" plan
-
-#### Skills Practiced
-
-- Flexbox
-- Card Layouts
-- Visual Hierarchy
-- CSS Transitions
-- Hover Effects
-  ![Pricing Cards Section](/pricing-cards.png)
-
----
-
-### 3. Restaurant Menu Page
-
-**Status:** ✅ Completed
-
-#### Features
-
-- Menu categories
-- Food cards
-- Pricing information
-- Responsive layout
-
-#### Skills Practiced
-
-- CSS Grid
-- Layout Design
-- Responsive Design
-- Typography
-- Cards
-  ![Restaurant Menu Page](/restaurant-menu.png)
-
----
-
-### 4. Product Landing Page
-
-**Status:** ✅ Completed
-
-#### Features
-
-- Hero section
-- Features section
-- Testimonials
-- Footer
-- Navigation bar
-
-#### Skills Practiced
-
-- Responsive Layouts
-- Background Images
-- Typography
-- Flexbox
-- Section Design
-  ![Product Landing Page](/product-landing-page.png)
-
----
-
-### 5. Dashboard Layout
-
-**Status:** ⬜ Not Started
-
-#### Features
-
-- Sidebar
-- Top navigation
-- Statistics cards
-- Main content area
-
-#### Skills Practiced
-
-- CSS Grid
-- Complex Layouts
-- Positioning
-- Responsive Design
-- Dashboard UI Patterns
-
-![Dashboard Layout](/dashboard-layout.png)
-
----
+### [5. Dashboard Layout](./05-dashboard-layout/README.md)
 
 ## Progress Tracker
 
@@ -144,8 +62,8 @@ Complete all five projects without copying the final code from tutorials and rel
 
 ### Project Links
 
-- [Profile Card](./profile-card)
-- [Pricing Cards](./pricing-cards)
-- [Restaurant Menu](./restaurant-menu)
-- [Product Landing Page](./product-landing-page)
-- [Dashboard Layout](./dashboard-layout)
+- [Profile Card](./01-profile-card/)
+- [Pricing Cards](./02-pricing-cards/)
+- [Restaurant Menu](./03-restaurant-menu/)
+- [Product Landing Page](./04-product-landing-page/)
+- [Dashboard Layout](./05-dashboard-layout/)
