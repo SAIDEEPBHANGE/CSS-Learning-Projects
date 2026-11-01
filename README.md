@@ -14,29 +14,7 @@ This repository contains small CSS projects I'm building while learning frontend
 
 ## Project Roadmap
 
-### 1. Personal Profile Card
-
-**Status:** ✅ Completed
-
-#### Features
-
-- Profile image
-- Name and title
-- Short bio
-- Social media links
-- Hover effects
-
-#### Skills Practiced
-
-- Box Model
-- Spacing and Alignment
-- Border Radius
-- Shadows
-- Flexbox
-- Hover States
-  ![Personal Profile Card](/profile-card.png)
-
----
+### [1 Personal Profile Card](./01-profile-card/README.md)
 
 ### 2. Pricing Cards Section
 
