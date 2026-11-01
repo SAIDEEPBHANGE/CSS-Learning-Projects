@@ -125,14 +125,12 @@ body {
   border: 1px solid var(--color-featured);
   border-radius: 16px;
 }
-
 .pricing-card--featured::before {
   content: "";
   position: absolute;
   inset: -2px;
   border-radius: inherit;
   padding: 2px;
-
   background: conic-gradient(
     from var(--border-angle),
     transparent 0deg,
@@ -142,25 +140,20 @@ body {
     #a78bfa 355deg,
     #ffffff 360deg
   );
-
   mask:
     linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
-
   -webkit-mask-composite: xor;
   mask-composite: exclude;
-
   animation: borderTravel 3s linear infinite;
   pointer-events: none;
   z-index: -1;
 }
-
 @property --border-angle {
   syntax: "<angle>";
   initial-value: 0deg;
   inherits: false;
 }
-
 @keyframes borderTravel {
   to {
     --border-angle: 360deg;
