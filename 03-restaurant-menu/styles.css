@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "DM Sans", sans-serif;
+  background:
+    linear-gradient(rgba(20, 15, 10, 0.65), rgba(20, 15, 10, 0.75)),
+    url("./assets/Restaurant-Banner.webp") center/cover fixed no-repeat;
+  min-height: 100vh;
+  color: #fff;
+  padding: 1px 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+header {
+  margin: 2vh 3vw;
+  padding: 18px 4vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10vw);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  position: sticky;
+  top: 12px;
+  z-index: 10;
+}
+.Restaurant_Header_Left {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.Restaurant_Header_Left_Name {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(20px, 2vw, 30px);
+  font-weight: 800;
+  color: #ffa500;
+}
+.Restaurant_Header_Left_Sub_Name {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #ffa500;
+  text-transform: uppercase;
+}
+.Restaurant_Header_Right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.Restaurant_Header_Right_Btn {
+  border: 1px solid #ffa500;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  color: #ffa500;
+}
+.Restaurant_Header_Right_Btn:hover {
+  background: #e99b45;
+  border-color: #e99b45;
+  color: #20150d;
+  transform: translateY(-2px);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin: 50px auto;
+  padding: 0 5vw;
+  max-width: 100%;
+}
+main > section {
+  background: rgba(255, 255, 255, 0.94);
+  color: #302319;
+  padding: 35px;
+  border-radius: 24px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.25);
+  scroll-margin-top: 110px;
+}
+.Course_Heading,
+main > section > h2 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(28px, 3vw, 38px);
+  color: #713b1b;
+  margin-bottom: 25px;
+  position: relative;
+  padding-bottom: 12px;
+}
+.Course_Heading::after,
+main > section > h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 65px;
+  height: 4px;
+  background: #e99b45;
+  border-radius: 10px;
+}
+.Course_Heading_Grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+}
+.Course_Heading_Grid_Box {
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid #eee2d5;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.Course_Heading_Grid_Box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+.Course_Heading_Grid_Box > img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.Course_Heading_Grid_Box:hover > img {
+  transform: scale(1.05);
+}
+.Course_Heading_Grid_Box > div {
+  padding: 12px 18px;
+}
+.Course_Heading_Grid_Box h3,
+.Course_Heading_Grid_Box h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 21px;
+  color: #58351f;
+  margin-bottom: 7px;
+}
+.Course_Heading_Grid_Box p {
+  font-size: 14px;
+  color: #81766e;
+  line-height: 1.6;
+}
+.Course_Heading_Grid_Box > div:last-child {
+  color: #bd6824;
+  font-size: 19px;
+  font-weight: 800;
+  padding-top: 0;
+}
+footer {
+  margin: 30px 3vw 20px;
+  padding: 20px 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  color: #fff;
+  font-size: 14px;
+}
+footer a:hover {
+  color: #ffca80;
+}
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 20px;
+  }
+  .Restaurant_Header_Left {
+    align-items: center;
+    text-align: center;
+  }
+  .Restaurant_Header_Right {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .Restaurant_Header_Right_Btn {
+    padding: 9px 15px;
+  }
+  main {
+    margin: 30px auto;
+    gap: 30px;
+  }
+  main > section {
+    padding: 25px;
+  }
+}
+@media (max-width: 480px) {
+  .Restaurant_Header_Right {
+    gap: 8px;
+  }
+  .Restaurant_Header_Right_Btn {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+  main {
+    padding: 0 4vw;
+  }
+  main > section {
+    padding: 20px;
+    border-radius: 18px;
+  }
+  .Course_Heading_Grid {
+    grid-template-columns: 1fr;
+  }
+  footer {
+    flex-direction: column;
+    border-radius: 18px;
+    text-align: center;
+  }
+}
