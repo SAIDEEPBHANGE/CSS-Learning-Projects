@@ -3,48 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Admin Dashboard</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="">
-      <aside class="">
-        <div class="">Logo</div>
-        <nav class="">
-          <ul class="">
-            <li class="">Dashboard</li>
-            <li class="">Analytics</li>
-            <li class="">Projects</li>
-            <li class="">Settings</li>
-          </ul>
-        </nav>
-      </aside>
-      <div class="">
-        <header class="">
-          <div class="">Search</div>
-          <div class="">Notifications Profile</div>
-        </header>
-        <section class="">
-          <article class="">
-            <h3 class="">Revenue</h3>
-            <p class="">$12,500</p>
+    <aside class="right_bar">
+      <div class="right_bar_heading">Logo</div>
+      <nav>
+        <ul class="right_bar_links">
+          <li><a href="#" class="active">Dashboard</a></li>
+          <li><a href="#">Analytics</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Settings</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <div class="left_bar">
+      <header class="top_bar">
+        <div class="search">
+          <input type="search" placeholder="Search..." />
+        </div>
+        <div class="profile">
+          <span>🔔</span>
+          <span class="profile_name">Admin Profile</span>
+        </div>
+      </header>
+      <div class="dashboard_content">
+        <h1>Dashboard Overview</h1>
+        <section class="stats_grid">
+          <article class="stat_card">
+            <h3>Revenue</h3>
+            <p>$12,500</p>
+            <span>+12% this month</span>
           </article>
-          <article class="">
-            <h3 class="">Users</h3>
-            <p class="">2,350</p>
+          <article class="stat_card">
+            <h3>Users</h3>
+            <p>2,350</p>
+            <span>+8% this month</span>
           </article>
-          <article class="">
-            <h3 class="">Orders</h3>
-            <p class="">820</p>
+          <article class="stat_card">
+            <h3>Orders</h3>
+            <p>820</p>
+            <span>+5% this month</span>
           </article>
-          <article class="">
-            <h3 class="">Growth</h3>
-            <p class="">18%</p>
+          <article class="stat_card">
+            <h3>Growth</h3>
+            <p>18%</p>
+            <span>+3% this month</span>
           </article>
         </section>
-        <main class="">
-          <section class="">Main Dashboard Content</section>
-          <section class="">Additional Widgets</section>
+        <main class="main_content">
+          <section class="content_card">
+            <h2>Main Dashboard Content</h2>
+            <p>Your main analytics and dashboard information goes here.</p>
+          </section>
+          <section class="content_card">
+            <h2>Additional Widgets</h2>
+            <p>Add charts, reports, and other widgets here.</p>
+          </section>
         </main>
       </div>
     </div>
